@@ -1,76 +1,124 @@
-<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start('ob_gzhandler'); else ob_start(); ?>
-<?php $page = basename($_SERVER['SCRIPT_NAME']); ?>
-
-<!DOCTYPE html><!--G5Framework-->
-
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="no-js lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
 <head>
 <meta charset="utf-8">
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
 
-<title>HTML5 Front End Development - G5Framework</title>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta http-equiv="imagetoolbar" content="no" />
-
-<meta name="author" content="G5Framework.com" />  
-<meta name="copyright" content="&copy; 2013" /> 
-<meta name="description" content="G5Framework is a HTML5 Cross Browser Front End Development Boilerplate" /> 
-
-<meta property="og:title" content="HTML5 Front End Development - G5Framework" />
-<meta property="og:description" content="G5Framework is a HTML5 Cross Browser Front End Development Boilerplate" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/<?php echo $page ?>" />
-<meta property="og:image" content="_assets/icon/touch-icon-iphone4.png" />
-
-<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
-<meta name="robots" content="index,follow" /> 
-<meta name="robots" content="noodp" />
-
-<link rel="author" href="humans.txt" />
-<link rel="canonical" href="/<?php echo $page ?>" />
-
-<link rel="apple-touch-icon" href="_assets/icon/touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="_assets/icon/touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="_assets/icon/touch-icon-iphone4.png" />
-
-<link rel="icon" href="_assets/icon/favicon.png" />
-<!--[if IE]><link rel="shortcut icon" href="_assets/icon/favicon.ico" /><![endif]-->
-<meta name="msapplication-TileColor" content="#411c15" />
-<meta name="msapplication-TileImage" content="_assets/icon/tile-icon.png" />
+<title>精弘任务贴</title>
 
 <link rel="stylesheet" href="_assets/css/base.css?v=1" />
+<link rel="stylesheet" href="_assets/css/style.css?v=1" />
 <link rel="stylesheet" href="_assets/css/media.css?v=1" />
 
 <script src="_assets/js/libs/modernizr.2.6.2-min.js"></script>
-
 </head>
-<body class="demo-page">
+<body class="index">
+<div class="wrap">
+    <div class="header line">
+        <div class="logo unit ">
+            <img src="_assets/images/index/logo.jpg" alt="logo">
+        </div>
 
-    <div id="main" role="main">
+        <div class="nav unit">
+         
+         <a href="index.php" class="current">首页</a>
+         <a href="#">工大专区</a> 
+         <a href="#">淘宝专区</a>
+       
+        </div>
 
-        <?php include("parts/header.php"); ?>
+        <div class="account unitRight">
+            <a href="#">个人中心</a>
+        </div>
+        <div class="search unitRight">
+            <form class="cf">
+   <!--              <select class="unit" id="search_type">
+                    <option value="1">找任务</option>
+                    <option value="2">找高手</option>
+                    <option value="3">找商家</option>
+                </select>  -->
+                <input type="text" name="search-key" id="search-key"  class="unit" />
+                <input type="button" name="search-btn"  id="search-btn" class="unit" />
+            </form>
+        </div>
 
-        <section class="content wrap-max">
-            <div class="wrap cf">
+    </div>
+    <div class="content line">
+        <div class="main-content unit size2of3">
+            <!-- 
+            淘设计，滚动图片
+            -->
+            <div class="line">
+                <div id="category" class="unit size1of3">
+                    <ul class="cf">
+                        <li class="active"><a href="#" class="first headlink">淘设计</a></li>
+                        <li><a href="#" class="headlink">淘软件</a></li>
+                    </ul>
+                    <div class="tabs-content">
+                        <div class="tab active">标志制作</div>
+                        <div class="tab">软件开发</div>
+                    </div>
+                </div>
+                <div class="unitRight size2of3"></div>
+            </div>
+             <!-- 
+            最近发布任务，中标作品
+            -->           
+            <div class="line">
+                <div class="unit size1of3"></div>
+                <div class="unitRight size2of3"></div>
+            </div>
+             <!-- 
+            创意定制
+            -->  
+            <div id="tasks"> 
+                <div class="line">
+                    <div class="tabs-title unit"></div>
+                    <ul class="cf unitRight">
+                        <li class="active"><a href="#" class="first headlink">进行中的任务</a></li>
+                        <li><a href="#" class="headlink">已经完成的任务</a></li>
+                    </ul>
+                </div>
+                 <div class="tabs-content cf">
+                    <div class="tab active">
+                        <div class="task-category"></div>
+                        <div>
+                            <div class="task-bar">logo设计</div>
+                            <div class="task-bar">banner设计</div>
+                            <div class="task-bar">图片编辑</div>
+                            <div class="task-bar">海报设计</div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab">
+                        <div class="task-category"></div>
+                        <div>
+                            <div class="task-bar">logo设计</div>
+                            <div class="task-bar">banner设计</div>
+                            <div class="task-bar">图片编辑</div>
+                            <div class="task-bar">海报设计</div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
 
-                <?php include("include/demo.php"); ?>
 
-            </div><!--end .wrap-->
-        </section><!--end .content-->
+         </div>
+        <div class="sidebar unitRight size1of3"> 
+            <div class="accept"></div>
+            <div class="rewards"></div>
+            <div class="cases"></div>
+            <div class="top-services"></div>
+        </div>
+     
+    </div>
+    <div class="footer"></div>
+</div>
 
-        <?php include("parts/footer.php"); ?>
-
-        <?php include("parts/modals.php"); ?>
-
-    </div><!--end #main-->
-
-    <script src="_assets/js/app.js"></script>
-
+<script src="_assets/js/app.js"></script>
 </body>
 </html>

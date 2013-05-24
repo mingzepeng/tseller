@@ -30,8 +30,6 @@
 @import "modal.css";
 @import "tabs.css";
 
-@import "demo-page.css";
-
 /* 
 
     For projects IE8+
@@ -50,10 +48,10 @@
 /* HTML // Body */
 html, body { height: 100%; }
 html { font: normal normal 100%/1.5em helvetica, arial, sans-serif; }
-body { background: #411c15; color: #f6f6f6; font: normal normal 0.938em/1.6em helvetica, arial, sans-serif; }
+body { background: #ffffff; color: #cfd0d3; font: normal normal 0.938em/1.6em "微软雅黑"; }
 
 a,
-a:link { border-bottom: 1px solid; color: #DC8492; text-decoration: none; }
+a:link { color: #DC8492; text-decoration: none; }
 a[class~="button"] { border-bottom: none; }
 a:hover {  } 
 a:visited { border-bottom: 1px dotted; color: #DC8492; }
@@ -73,20 +71,4 @@ th { border: 1px solid #ccc; padding: 1em; text-align: left; }
 abbr[title],
 dfn[title] { border-bottom: 1px dotted #f2bc32; }
 
-/* Main */ 
-#main { margin: 0 auto; padding: 0; position: relative; min-height: 100%; width: 100%; }    
 
-/* Main // Wrappers */ 
-.wrap-max,
-.wrap { margin: 0 auto; padding: 0; width: 100%; }
-.wrap { max-width: 1024px; min-width: 200px; padding: 0 5%; width: 90%; }
-
-/* Logo */ 
-#logo { border: none; display: block; margin: 0; overflow: hidden; height: 72px; text-decoration: none; width: 267px; }
-#logo:hover { background: transparent; }
-
-/* Content // Base */ 
-.content { margin: 2em auto; padding: 0 0 20em 0; text-align: left; }
-
-/* Sticky Footer */ 
-#bottom { bottom: 0; left: 0; margin: 0 auto; position: absolute; }

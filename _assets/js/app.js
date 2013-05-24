@@ -99,14 +99,14 @@
 
                     (function(){
 
-                        if ( WebApp.cache.body.is('.demo-page') ) {
+                        if ( WebApp.cache.body.is('.index') ) {
                             yepnope([
                                 {
                                     load: [
-                                        '_assets/js/demo-page.js'
+                                        '_assets/js/index.js'
                                     ],
                                     complete: function(){
-                                        console.log('G5: Demo Page JS Loaded');
+                                        console.log('G5: index JS Loaded');
                                     }
                                 }
                             ]);

@@ -1,8 +1,8 @@
 .line,
 .lastUnit { overflow: hidden; *overflow: visible; * zoom:1;}
 
-.unit { float:left; }
-.unitRight { float:right; }
+.unit { float:left; display: inline; }
+.unitRight { float:right; display: inline;}
 
 .size1of1 { float: none; }
 .size1of2 { width: 50%; }
@@ -14,4 +14,5 @@
 .size2of5 { width: 40%; }
 .size3of5 { width: 60%; }
 .size4of5 { width: 80%; }
+.size1of10 { width: 10%; }
 .lastUnit { float: none; width: auto; _position: relative; _left: -3px; _margin-right: -3px; }

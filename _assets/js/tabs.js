@@ -50,29 +50,33 @@ var g5Tabs = function(el){
 	console.log('G5: g5Tabs Executed');
 
 };
+(function(g5Tabs,$){
 
-g5Tabs.prototype.init = function(tabsObj){
+	g5Tabs.prototype.init = function(tabsObj){
 
-	$tabs = tabsObj.el,
-	$tabLink = $tabs.find('.headlink'),
-	$tabContent = $tabs.find('.tab');
+		var $tabs = tabsObj.el,
+			$tabLink = $tabs.find('.headlink'),
+			$tabContent = $tabs.find('.tab');
+			console.log($tabLink)
+			console.log($tabContent)
+		if ( $tabLink.length === 0 || $tabContent.length === 0 ) {
+			throw 'Missing required elements.';
+		}
 
-	if ( $tabLink.length <= 0 || $tabContent.length <= 0 ) {
-		throw 'Missing required elements.';
-	}
+		$tabLink.on('click', function(event) {
 
-	$tabLink.on('click', function(event) {
+			var $this = $(this),
+				$li = $this.parent();
 
-		var $this = $(this),
-			$li = $this.parent();
+	        if ( !$li.is('.active') ) {
+	            $li.addClass('active').siblings('li').removeClass('active');
+	            $tabContent.hide().removeClass('active').eq($li.index()).show().addClass('active');
+	        }
 
-        if ( !$li.is('.active') ) {
-            $li.addClass('active').siblings('li').removeClass('active');
-            $tabContent.hide().removeClass('active').eq($li.index()).show().addClass('active');
-        }
+		    event.preventDefault();
 
-	    event.preventDefault();
+		});
+	};
+})(g5Tabs,jQuery);
 
-	});
 
-};
