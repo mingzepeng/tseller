@@ -1,0 +1,31 @@
+/*
+common
+*/
+.linebox{border: 1px solid #cfd0d3}
+
+
+/*
+current page style
+*/
+/* Main */ 
+
+/* Main // Wrappers */ 
+.wrap { margin: 5px auto 0 auto; padding: 0; width: 1200px; }
+/*
+.header
+*/
+.header{border-bottom: #3987cc solid 4px; height: 80px;}
+.header .nav {margin-top: 25px; margin-left: 20px; }
+
+.header .nav a{float: left;display: inline-block; margin-right: 20px; height: 40px; line-height: 40px;font-size: 18px; padding: 5px; color: black}
+.header .nav a.current{background: url("../images/index/nav_active.gif") center bottom no-repeat;}
+.header .nav a.last{margin-right: 0}
+
+.search{margin-top: 25px ; margin-right: 40px}
+.header .search select,.header .search input{border: 2px solid #3987cc ;}
+#search-key{ border-right: none; height: 24px; padding: 0}
+#search-type{border-right: none}
+#search-btn{border-left: none;  font-size: 12px; height: 28px; width: 60px; padding: 0; background:#5aadf7  url("../images/index/search_icon.gif") center no-repeat}
+
+.account {background-color:#5aadf7; margin-top: 25px; width: 100px; text-align: center; height: 28px; line-height: 28px;}
+.account a{text-decoration: none; display: inline-block; color: white; font-size: 12px}
