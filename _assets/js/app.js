@@ -1,3 +1,4 @@
+
 /* 
 
     +------------------+
@@ -53,7 +54,7 @@
     yepnope([
         {
             load: [
-                '//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'
+                '_assets/js/libs/jquery-1.9.0.min.js'
             ],
             complete: function(){
                 if ( !window.jQuery ) {
@@ -74,7 +75,8 @@
             load: [
                 '_assets/js/libs/jquery.metadata.js',
                 '_assets/js/utility.js',
-                '_assets/js/tabs.js'
+                '_assets/js/tabs.js',
+                '_assets/js/orbit.min.js'
             ],
             complete: function(){
 

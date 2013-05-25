@@ -97,12 +97,6 @@ table { border-collapse:collapse; border-spacing:0; }
 td, td img { vertical-align:top; } 
 
 /* Basic Styling */
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-
-dd { margin: 0 0 0 40px; }
-ol { list-style-type: decimal; }
-
-small { font-size: 85%; }
 strong, th, b { font-weight: bold; }
 
 em, i, dfn { font-style: italic; }

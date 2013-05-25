@@ -20,7 +20,8 @@
 <div class="wrap">
     <div class="header line">
         <div class="logo unit ">
-            <img src="_assets/images/index/logo.jpg" alt="logo">
+            <h1><a href="#">精弘任务贴</a></h1>
+           
         </div>
 
         <div class="nav unit">
@@ -47,37 +48,41 @@
         </div>
 
     </div>
-    <div class="content line">
-        <div class="main-content unit size2of3">
+    <div class="content line cf">
+        <div class="main-content unit">
             <!-- 
             淘设计，滚动图片
             -->
-            <div class="line">
-                <div id="category" class="unit size1of3">
+            <div class="line1 line cf">
+                <div id="category" class="category linebox unit">
+                    <div class="tabs-headlinks unit">
                     <ul class="cf">
                         <li class="active"><a href="#" class="first headlink">淘设计</a></li>
                         <li><a href="#" class="headlink">淘软件</a></li>
                     </ul>
-                    <div class="tabs-content">
+                    </div>
+                    <div class="unit tabs-content">
                         <div class="tab active">标志制作</div>
                         <div class="tab">软件开发</div>
                     </div>
                 </div>
-                <div class="unitRight size2of3"></div>
+                <div class="slider linebox unitRight"></div>
             </div>
              <!-- 
             最近发布任务，中标作品
             -->           
-            <div class="line">
-                <div class="unit size1of3"></div>
-                <div class="unitRight size2of3"></div>
+            <div class="line2 line cf">
+                <div class="latest-tasks linebox unit"></div>
+                <div class="winning-works linebox unitRight"></div>
             </div>
              <!-- 
             创意定制
             -->  
-            <div id="tasks"> 
-                <div class="line">
-                    <div class="tabs-title unit"></div>
+            <div id="tasks" class="tabs"> 
+                <div class="line tasks-title">
+                    <div class="unit">
+                        <h2>创意定制</h2>
+                    </div>
                     <ul class="cf unitRight">
                         <li class="active"><a href="#" class="first headlink">进行中的任务</a></li>
                         <li><a href="#" class="headlink">已经完成的任务</a></li>
@@ -85,22 +90,292 @@
                 </div>
                  <div class="tabs-content cf">
                     <div class="tab active">
-                        <div class="task-category"></div>
+                        <div class="task-category">
+                            <a href="#">字体设计 </a>      <a href="#">服饰设计 </a>      <a href="#">网店美化  </a>      <a href="#">卡片设计 </a>       <a href="#">景观设计</a>     <a href="#"> 爱情礼物</a>    <a href="#">T恤设计 </a>     <a href="#">PPT设计 </a>     <a href="#">卡片设计  </a>   <a href="#">T恤设计</a>
+
+                        </div>
                         <div>
-                            <div class="task-bar">logo设计</div>
-                            <div class="task-bar">banner设计</div>
-                            <div class="task-bar">图片编辑</div>
-                            <div class="task-bar">海报设计</div>
+                       
+                            <div class="task-bar unit linebox mb10">   
+                                <div class="task-bar-bg task-bar-bg-blue unit">
+                                    <a href="#">logo设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unitRight linebox mb10">
+
+                                
+                                <div class="task-bar-bg task-bar-bg-red unit">
+                                    <a href="#">banner设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unit linebox">
+                             <div class="task-bar-bg task-bar-bg-red unit">
+                                    <a href="#">图片编辑</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unitRight linebox">
+                                <div class="task-bar-bg task-bar-bg-blue unit">
+                                    <a href="#">海报设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                      
                         </div>
                         
                     </div>
                     <div class="tab">
-                        <div class="task-category"></div>
+                        <div class="task-category">
+ <a href="#">字体设计 </a>      <a href="#">服饰设计 </a>      <a href="#">网店美化  </a>      <a href="#">卡片设计 </a>       <a href="#">景观设计</a>     <a href="#"> 爱情礼物</a>    <a href="#">T恤设计 </a>     <a href="#">PPT设计 </a>     <a href="#">卡片设计  </a>   <a href="#">T恤设计</a>
+                        </div>
                         <div>
-                            <div class="task-bar">logo设计</div>
-                            <div class="task-bar">banner设计</div>
-                            <div class="task-bar">图片编辑</div>
-                            <div class="task-bar">海报设计</div>
+                         
+                             <div class="task-bar unit linebox mb10">   
+                                <div class="task-bar-bg task-bar-bg-blue unit">
+                                    <a href="#">logo设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unitRight linebox mb10">
+
+                                
+                                <div class="task-bar-bg task-bar-bg-red unit">
+                                    <a href="#">banner设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unit linebox">
+                             <div class="task-bar-bg task-bar-bg-red unit">
+                                    <a href="#">图片编辑</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="task-bar unitRight linebox">
+                                <div class="task-bar-bg task-bar-bg-blue unit">
+                                    <a href="#">海报设计</a></div>
+                                <table>
+                                    <tr class="head">
+                                        <th style="width:40%">任务信息</th>
+                                        <th>酬金</th>
+                                        <th>剩余时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        <td>7天</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        
+                        
                         </div>
                     </div>
                  </div>
@@ -108,11 +383,17 @@
 
 
          </div>
-        <div class="sidebar unitRight size1of3"> 
-            <div class="accept"></div>
-            <div class="rewards"></div>
-            <div class="cases"></div>
-            <div class="top-services"></div>
+        <div class="sidebar unitRight"> 
+            <div class="infos linebox"></div>
+            <div class="rewards linebox">
+                <h2>top3 酬金任务</h2>
+            </div>
+            <div class="cases linebox">
+                <h2>案例展示</h2>
+            </div>
+            <div class="top-services linebox" style="margin-bottom:0">
+                <h2>top5 服务商</h2>
+            </div>
         </div>
      
     </div>
