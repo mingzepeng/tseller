@@ -70,25 +70,5 @@
 .opct-full { filter: alpha(opacity=100); opacity: 1; }
 
 .no-borderradius .brdr,
-.no-boxshadow .shdw { behavior: url(src/PIE.php); }
+.no-boxshadow .shdw { behavior: url(src/PIE.htc); }
 
-/* Navigation Object */
-.navigation-object { margin: 0; padding: 0; }
-.navigation-object li { float: left; list-style: none; margin-left: 1em; padding: 0; }
-.navigation-object a { display: block; padding: .5em; text-decoration: none; }
-.navigation-object a:hover,
-.navigation-object .active { border-bottom: 1px solid inherit; }
-.navigation-object li:first-child,
-.navigation-object .first { margin-left: 0; }
-
-.list { line-height: 1.5em; margin: 1em 0; padding: 0 0 0 2em; }
-.list-object { margin: 0; padding: 0; }
-.list-object li { list-style: none; }
-
-/* Island Object */
-.island { display: block; padding: 2em 0; }
-.island.primary { padding: 2.5em 0; }
-
-/* Navigation */ 
-nav.primary { margin-top: 1.5em; padding: 1em 0; }
-nav.primary .active { font-weight: bold; }

@@ -17,7 +17,9 @@ if ( $('.index').length ) {
             simpleTabs.init({
                 el: $('#tasks')
             });
-
+            simpleTabs.init({
+                el: $('#infos')
+            });
 
     // //Buttons Example
     // if ( $('#buttons-example').length ) {

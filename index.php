@@ -9,10 +9,10 @@
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
 
 <title>精弘任务贴</title>
-
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="_assets/css/base.css?v=1" />
 <link rel="stylesheet" href="_assets/css/style.css?v=1" />
-<link rel="stylesheet" href="_assets/css/media.css?v=1" />
+
 
 <script src="_assets/js/libs/modernizr.2.6.2-min.js"></script>
 </head>
@@ -33,7 +33,8 @@
         </div>
 
         <div class="account unitRight">
-            <a href="#">个人中心</a>
+            <a href="#" class="mr10">个人中心</a>
+            <a href="#">发布任务</a>
         </div>
         <div class="search unitRight">
             <form class="cf">
@@ -54,25 +55,82 @@
             淘设计，滚动图片
             -->
             <div class="line1 line cf">
-                <div id="category" class="category linebox unit">
+                <div id="category" class="category linebox unit cf">
                     <div class="tabs-headlinks unit">
                     <ul class="cf">
-                        <li class="active"><a href="#" class="first headlink">淘设计</a></li>
-                        <li><a href="#" class="headlink">淘软件</a></li>
+                        <li class="active"><a href="#" class="first headlink">淘<br />设<br />计</a></li>
+                        <li><a href="#" class="headlink">淘<br />软<br />件</a></li>
                     </ul>
                     </div>
                     <div class="unit tabs-content">
-                        <div class="tab active">标志制作</div>
+                        <div class="tab active">
+                            <dl>
+                                <dt><a href="#">标志设计</a></dt>
+                                <dd><a href="#">字体设计</a></dd>
+                                <dd><a href="#">图标设计</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">标志设计</a></dt>
+                                <dd><a href="#">字体设计</a></dd>
+                                <dd><a href="#">图标设计</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">标志设计</a></dt>
+                                <dd><a href="#">字体设计</a></dd>
+                                <dd><a href="#">图标设计</a></dd>
+                            </dl>
+                            <dl  class="active">
+                                <dt><a href="#">标志设计</a></dt>
+                                <dd><a href="#">字体设计</a></dd>
+                                <dd><a href="#">图标设计</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">标志设计</a></dt>
+                                <dd><a href="#">字体设计</a></dd>
+                                <dd><a href="#">图标设计</a></dd>
+                            </dl>
+                        </div>
                         <div class="tab">软件开发</div>
                     </div>
                 </div>
-                <div class="slider linebox unitRight"></div>
+                <div class="slider linebox unitRight">
+                    <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310">
+                </div>
             </div>
              <!-- 
             最近发布任务，中标作品
             -->           
             <div class="line2 line cf">
-                <div class="latest-tasks linebox unit"></div>
+                <div class="latest-tasks linebox unit">
+                   <div class="inner-title h15p" >  <h2>新鲜出炉任务</h2>  </div>
+                    <div class="inner-wrap" >
+                                <table class="list">
+                             
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                     
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                     
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                      
+                                    </tr>                                    <tr>
+                                        <td><a href="#">nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        
+                                    </tr>
+                                </table>
+                    </div>
+                </div>
                 <div class="winning-works linebox unitRight"></div>
             </div>
              <!-- 
@@ -384,15 +442,126 @@
 
          </div>
         <div class="sidebar unitRight"> 
-            <div class="infos linebox"></div>
-            <div class="rewards linebox">
-                <h2>top3 酬金任务</h2>
+            <div id="infos" class="infos line linebox tabs">
+
+                   <div class="tabs-headlinks">
+                    <ul class="cf">
+                        <li class="active"><a href="#" class="first headlink">公 告</a></li>
+                        <li><a href="#" class="headlink">规 则</a></li>
+                        <li><a href="#" class="headlink">交易安全</a></li>
+                    </ul>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab active">
+                            <table>
+                                <tr>
+                                    <td>需求市场平台升级</td>
+                                    <td>淘宝商家在家的威客市场</td>
+                                </tr>
+                                <tr>
+                                    <td>需求市场平台升级</td>
+                                    <td>淘宝商家在家的威客市场</td>
+                                </tr>
+                                <tr>
+                                    <td>需求市场平台升级</td>
+                                    <td>淘宝商家在家的威客市场</td>
+                                </tr>
+                                                              <tr>
+                                    <td>需求市场平台升级</td>
+                                    <td>淘宝商家在家的威客市场</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab">软件开发</div>
+                        <div class="tab">交易安全</div>
+                    </div>
+
             </div>
-            <div class="cases linebox">
-                <h2>案例展示</h2>
+
+
+
+
+
+
+            <div class="rewards line linebox ">
+                 <div class="inner-title h20p"><h2>top3 酬金任务</h2></div>
+                 <div class="inner-wrap">
+                    <table class="list">
+                        <tr class="first">
+                            <td class="no" style="text-indent: -9999px;">1</td>
+                            <td>计一个时尚咖啡店logo</td>
+                            <td class="reward">5000</td>
+                        </tr>
+                         <tr>
+                            <td class="no">2</td>
+                            <td>计一个时尚咖啡店logo</td>
+                            <td class="reward">5000</td>
+                        </tr>
+                                                <tr>
+                            <td class="no">3</td>
+                            <td>计一个时尚咖啡店logo</td>
+                            <td class="reward">5000</td>
+                        </tr>           
+                    </table>
+                 </div>
             </div>
-            <div class="top-services linebox" style="margin-bottom:0">
-                <h2>top5 服务商</h2>
+            <div class="cases linebox line">
+                <div class="inner-title h15p"> <h2>案例展示</h2></div>
+                <div class="inner-wrap">
+                    <table >
+                        <tr>
+                            <td><img src="_assets/images/index/img2.gif" /> </td>
+                            <td><img src="_assets/images/index/img2.gif" /></td>
+                            <td><img src="_assets/images/index/img2.gif" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="_assets/images/index/img2.gif" /></td>
+                            <td><img src="_assets/images/index/img2.gif" /></td>
+                            <td><img src="_assets/images/index/img2.gif" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="top-services line linebox" style="margin-bottom:0">
+                <div class="inner-title"><h2>top5 服务商</h2> </div>
+                
+                <div class="inner-wrap">
+    <table class="list">
+                                
+                                    <tr>
+
+                                           <td class="no">1</td>
+                                        <td><a href="#"><img src="_assets/images/index/img3.gif" /> nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                     
+                                    </tr>
+                                    <tr>
+                                        <td class="no">2</td>
+                                        <td><a href="#"><img src="_assets/images/index/img3.gif" />nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                        
+                                    </tr>    
+                                    <tr>
+                                        <td class="no">3</td>     
+                                        <td><a href="#"><img src="_assets/images/index/img3.gif" /> nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                      
+                                    </tr>   
+                                    <tr>
+                                        <td class="no">4</td>    
+                                        <td ><a href="#"><img src="_assets/images/index/img3.gif" /> nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                    
+                                    </tr>  
+                                    <tr>   
+                                        <td class="no">5</td>    
+                                        <td><a href="#"><img src="_assets/images/index/img3.gif" /> nali旗舰店logo设计</a></td>
+                                        <td class="reward">500元</td>
+                                     
+                                    </tr>
+                                </table>
+                </div>  
             </div>
         </div>
      
