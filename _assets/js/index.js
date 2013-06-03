@@ -21,7 +21,7 @@
         height: 310,
         navigation:false,
         play:{
-          interval:9000,
+          interval:6000,
            pauseOnHover: true,
           auto:true
         }

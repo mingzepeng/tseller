@@ -23,6 +23,10 @@
     margin: 6px 0 0;
     position: absolute;
     list-style: none;
+
+    z-index: 100;
+top: 280px;
+left: 470px;
   }
 
   .slidesjs-pagination li {
