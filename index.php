@@ -93,8 +93,8 @@
 
                 <div  class="slider linebox unitRight">
                     <div id="sliderWrap" class="theme-default">
-                    <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310">
-                    <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310">
+                   <a href="#"> <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310"></a>
+                   <a href="#"> <img src="_assets/images/index/slide/slide2.jpg" width="560" height="310"></a>
                     </div>
 
                 </div>

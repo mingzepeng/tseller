@@ -77,8 +77,8 @@
                 '_assets/js/libs/jquery.metadata.js',
                 '_assets/js/utility.js',
                 '_assets/js/tabs.js',
-                '_assets/nivo-slider/jquery.nivo.slider.pack.js',
-                '_assets/nivo-slider/nivo-slider.css'
+                '_assets/Slides-SlidesJS-3/source/jquery.slides.js',
+                '_assets/Slides-SlidesJS-3/source/jquery.slides.css'
             ],
             complete: function(){
 

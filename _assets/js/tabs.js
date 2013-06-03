@@ -57,8 +57,8 @@ var g5Tabs = function(el){
 		var $tabs = tabsObj.el,
 			$tabLink = $tabs.find('.headlink'),
 			$tabContent = $tabs.find('.tab');
-			console.log($tabLink)
-			console.log($tabContent)
+			//console.log($tabLink)
+			//console.log($tabContent)
 		if ( $tabLink.length === 0 || $tabContent.length === 0 ) {
 			throw 'Missing required elements.';
 		}

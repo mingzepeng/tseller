@@ -16,8 +16,18 @@
     }).mouseout(function(){
         $(this).removeClass('active');
     })
-    $('#sliderWrap').nivoSlider({
-        effect:'fade'
-    });
+    $('#sliderWrap').slidesjs({
+        width: 650,
+        height: 310,
+        navigation:false,
+        play:{
+          interval:9000,
+           pauseOnHover: true,
+          auto:true
+        }
+      });
+    // $('#sliderWrap').nivoSlider({
+    //     effect:'fade'
+    // });
    // $('#slider').orbit();
 });
