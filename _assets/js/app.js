@@ -20,7 +20,8 @@
 
     =============================================
 
-    TODO : Concatenate & Minify JS Pre-production
+    TO
+    O : Concatenate & Minify JS Pre-production
 
     ---------------------------------------------
 
@@ -76,7 +77,8 @@
                 '_assets/js/libs/jquery.metadata.js',
                 '_assets/js/utility.js',
                 '_assets/js/tabs.js',
-                '_assets/js/orbit.min.js'
+                '_assets/nivo-slider/jquery.nivo.slider.pack.js',
+                '_assets/nivo-slider/nivo-slider.css'
             ],
             complete: function(){
 

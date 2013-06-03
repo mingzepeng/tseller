@@ -93,7 +93,7 @@ width: 220px;}
 #tasks .task-category{ padding: 6px;}
 #tasks .task-category a{font-size: 12px; color: #999; margin-right: 20px;}
 #tasks .task-bar{width: 419px; height: 228px;}
-#tasks .task-bar .task-bar-bg{ height: 100%; width: 20%; }
+#tasks .task-bar .task-bar-bg{ height: 100%; width: 20%; text-align: center; }
 #tasks .task-bar .task-bar-bg a{font-size: 23px;
 font-weight: bold;
 color: white;

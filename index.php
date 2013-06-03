@@ -3,17 +3,14 @@
 <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
-
 <title>精弘任务贴</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="_assets/css/base.css?v=1" />
 <link rel="stylesheet" href="_assets/css/style.css?v=1" />
-
-
 <script src="_assets/js/libs/modernizr.2.6.2-min.js"></script>
 </head>
 <body class="index">
@@ -79,7 +76,7 @@
                                 <dd><a href="#">字体设计</a></dd>
                                 <dd><a href="#">图标设计</a></dd>
                             </dl>
-                            <dl  class="active">
+                            <dl>
                                 <dt><a href="#">标志设计</a></dt>
                                 <dd><a href="#">字体设计</a></dd>
                                 <dd><a href="#">图标设计</a></dd>
@@ -93,8 +90,13 @@
                         <div class="tab">软件开发</div>
                     </div>
                 </div>
-                <div class="slider linebox unitRight">
+
+                <div  class="slider linebox unitRight">
+                    <div id="sliderWrap" class="theme-default">
                     <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310">
+                    <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310">
+                    </div>
+
                 </div>
             </div>
              <!-- 
@@ -156,7 +158,7 @@
                        
                             <div class="task-bar unit linebox mb10">   
                                 <div class="task-bar-bg task-bar-bg-blue unit">
-                                    <a href="#">logo设计</a></div>
+                                    <a href="#">logo<br />设计</a></div>
                                 <table>
                                     <tr class="head">
                                         <th style="width:40%">任务信息</th>
@@ -191,7 +193,7 @@
 
                                 
                                 <div class="task-bar-bg task-bar-bg-red unit">
-                                    <a href="#">banner设计</a></div>
+                                    <a href="#">banner<br />设计</a></div>
                                 <table>
                                     <tr class="head">
                                         <th style="width:40%">任务信息</th>
@@ -224,7 +226,7 @@
                             </div>
                             <div class="task-bar unit linebox">
                              <div class="task-bar-bg task-bar-bg-red unit">
-                                    <a href="#">图片编辑</a></div>
+                                    <a href="#">图片<br />编辑</a></div>
                                 <table>
                                     <tr class="head">
                                         <th style="width:40%">任务信息</th>
@@ -257,7 +259,7 @@
                             </div>
                             <div class="task-bar unitRight linebox">
                                 <div class="task-bar-bg task-bar-bg-blue unit">
-                                    <a href="#">海报设计</a></div>
+                                    <a href="#">海报<br />设计</a></div>
                                 <table>
                                     <tr class="head">
                                         <th style="width:40%">任务信息</th>
