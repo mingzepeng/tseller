@@ -77,8 +77,7 @@
                 '_assets/js/libs/jquery.metadata.js',
                 '_assets/js/utility.js',
                 '_assets/js/tabs.js',
-                '_assets/Slides-SlidesJS-3/source/jquery.slides.js',
-                '_assets/Slides-SlidesJS-3/source/jquery.slides.css'
+                '_assets/flexslider/jquery.flexslider.js'
             ],
             complete: function(){
 

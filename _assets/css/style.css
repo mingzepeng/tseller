@@ -55,9 +55,10 @@ current page style
 	.line1,.line2{ margin-bottom: 15px}
 	.category{width: 278px;height:310px;}
 	.slider{width: 560px;height:310px;}
+	.sliderWrap{width: 100%; height: 100%}
 	.latest-tasks{width: 278px;height:210px;}
 	.winning-works{width: 560px;height:210px;}
-
+	.winning-works-wrap{width: 95%;height: 80%; margin:  0 auto}
 .category .tabs-headlinks{height: 100%; width: 56px;}
 .category ul{ height: 100%; width: 100%;}
 .category ul li{width: 100%; height: 50%;}

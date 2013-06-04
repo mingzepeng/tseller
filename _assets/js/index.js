@@ -16,16 +16,21 @@
     }).mouseout(function(){
         $(this).removeClass('active');
     })
-    $('#sliderWrap').slidesjs({
-        width: 650,
-        height: 310,
-        navigation:false,
-        play:{
-          interval:6000,
-           pauseOnHover: true,
-          auto:true
-        }
-      });
+    $('#sliderWrap').flexslider({
+        animation: "slide",
+        directionNav:false
+    });
+    $('#winning-works-wrap').flexslider({
+        animation: "slide",
+        directionNav:false,
+        animationLoop: false,
+
+        itemWidth: 150,
+        minItems: 3,
+        maxItems: 3
+
+    });
+
     // $('#sliderWrap').nivoSlider({
     //     effect:'fade'
     // });

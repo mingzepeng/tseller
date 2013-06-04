@@ -9,8 +9,11 @@
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
 <title>精弘任务贴</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
 <link rel="stylesheet" href="_assets/css/base.css?v=1" />
+<link rel="stylesheet" href="_assets/flexslider/flexslider.css" />
 <link rel="stylesheet" href="_assets/css/style.css?v=1" />
+
 <script src="_assets/js/libs/modernizr.2.6.2-min.js"></script>
 </head>
 <body class="index">
@@ -92,9 +95,15 @@
                 </div>
 
                 <div  class="slider linebox unitRight">
-                    <div id="sliderWrap" class="theme-default">
+                <div id="sliderWrap" class="flexslider">
+                 <ul class="slides">
+                    <li>
                    <a href="#"> <img src="_assets/images/index/slide/slide1.jpg" width="560" height="310"></a>
+                    </li>
+                 <li>
                    <a href="#"> <img src="_assets/images/index/slide/slide2.jpg" width="560" height="310"></a>
+               </li>
+                </ul>
                     </div>
 
                 </div>
@@ -133,7 +142,23 @@
                                 </table>
                     </div>
                 </div>
-                <div class="winning-works linebox unitRight"></div>
+                <div class="winning-works linebox unitRight">
+                    <div class="inner-title h20p">  <h2>中标作品</h2>  </div>
+                    <div id="winning-works-wrap" class="winning-works-wrap flexslider carousel">
+                        <ul class="slides">
+                            <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                             <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                              <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+
+                                        <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                             <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                              <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                                          <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                             <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                              <li><a href="#"><img width="154" src="_assets/images/index/img1.gif" /> </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
              <!-- 
             创意定制
