@@ -41,7 +41,7 @@ G5App.prototype.assets = function(obj){
 	        yepnope([
 	            {
 	                load: [
-	                    '_assets/js/ios-orientationchange-fix.js'
+	                    'assets/js/ios-orientationchange-fix.js'
 	                ],
 	                complete: function(){
 
@@ -58,7 +58,7 @@ G5App.prototype.assets = function(obj){
             yepnope([
                 {
                     load: [
-                        '_assets/js/libs/jquery.placeholder.min.js'
+                        'assets/js/libs/jquery.placeholder.min.js'
                     ],
                     complete: function(){
                         $('input[placeholder], textarea[placeholder]').placeholder();
@@ -74,7 +74,7 @@ G5App.prototype.assets = function(obj){
             yepnope([
                 {
                     load: [
-                        '_assets/js/jquery.customInput.js'
+                        'assets/js/jquery.customInput.js'
                     ],
                     complete: function(){
                         replaceInput.customInput();
@@ -87,7 +87,7 @@ G5App.prototype.assets = function(obj){
         yepnope([
             {
                 load: [
-                    '_assets/js/modal.js'
+                    'assets/js/modal.js'
                 ],
                 complete: function(){
                     g5Modal.init();
@@ -100,13 +100,13 @@ G5App.prototype.assets = function(obj){
             yepnope([
                 {
                     load: [
-                        '_assets/js/libs/jquery.validate.min.js'
+                        'assets/js/libs/jquery.validate.min.js'
                     ],
                     complete: function(){
                         yepnope([
                             {
                                 load: [
-                                    '_assets/js/validation.js'
+                                    'assets/js/validation.js'
                                 ],
                                 complete: function(){
                                     formValidation();

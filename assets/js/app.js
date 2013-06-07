@@ -55,14 +55,14 @@
     yepnope([
         {
             load: [
-                '_assets/js/libs/jquery-1.9.0.min.js'
+                'assets/js/libs/jquery-1.9.0.min.js'
             ],
             complete: function(){
                 if ( !window.jQuery ) {
                     yepnope([
                         {
                             load: [
-                                '_assets/js/libs/jquery-1.9.0.min.js'
+                                'assets/js/libs/jquery-1.9.0.min.js'
                             ],
                             complete: function(){
                                 console.log('G5: CDN Failed - Loaded local version of jQuery.');
@@ -74,10 +74,10 @@
         },
         {
             load: [
-                '_assets/js/libs/jquery.metadata.js',
-                '_assets/js/utility.js',
-                '_assets/js/tabs.js',
-                '_assets/flexslider/jquery.flexslider.js'
+                'assets/js/libs/jquery.metadata.js',
+                'assets/js/utility.js',
+                'assets/js/tabs.js',
+                'assets/flexslider/jquery.flexslider.js'
             ],
             complete: function(){
 
@@ -106,7 +106,7 @@
                             yepnope([
                                 {
                                     load: [
-                                        '_assets/js/index.js'
+                                        'assets/js/index.js'
                                     ],
                                     complete: function(){
                                         console.log('G5: index JS Loaded');
