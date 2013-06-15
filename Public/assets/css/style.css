@@ -44,8 +44,7 @@ current page style
 #search-type{border-right: none}
 #search-btn{border-left: none;  font-size: 12px; height: 28px; width: 60px; padding: 0; background:#5aadf7  url("../images/index/search_icon.gif") center no-repeat}
 
-.account { margin-top: 25px;   height: 28px;}
-.account a{text-decoration: none; display: inline-block; color: white; font-size: 12px;text-align: center;height: 28px; line-height: 28px;background-color:#5aadf7; width: 80px;}
+
 
 .content{border-top: #3987cc solid 3px;padding-top: 17px;}
 
@@ -63,13 +62,16 @@ current page style
 	.rewards .first td.no{color: #ffffff;width: 10%}
 	.rewards .first td.reward{color: #ffffff; width: 33%; font-size: 18px;}
 
-	.infos{ height: 310px;background:#347bb8  url("../images/index/infos_bg.gif") no-repeat; border-color: #347bb8}
-	.infos .tabs-headlinks{margin: 80px 20px 0 20px;}
+	.infos{width:310px; height: 310px;background:#347bb8  url("../images/index/infos_bg.gif") no-repeat; border-color: #347bb8}
+    .infos .account{margin: 20px auto; width:270px}
+    .infos .account a{display:inline-block; padding:6px 0; width:120px; text-align:center; background:white;color:black;font-size:14px;}
+    .infos .account a.login{margin-right:25px}
+    .infos .tabs-headlinks{margin: 0px auto;width:270px; display:block}
 	.infos .tabs-headlinks li{width: 90px;height: 35px;text-align: center;background: #58acf4;line-height: 35px;}
 	.infos .tabs-headlinks li a{color: white;font-size: 12px;}
 	.infos .tabs-headlinks li.active{background: white;}
 	.infos .tabs-headlinks li.active a{color: #666;}
-	.infos .tabs-content{margin: 0 20px; background: white; height: 175px;}
+	.infos .tabs-content{margin: 0 auto; background: white; height: 175px; width:270px}
 	.infos .tab{padding: 15px 10px  0 10px;}
 	.infos .tab td{padding:  3px;font-size: 12px; color: #000 }
 	.infos .tab a{font-size: 12px;color: #000}
