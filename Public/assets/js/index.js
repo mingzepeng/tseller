@@ -4,9 +4,9 @@
         //     el: $('#category')
         // });
 
-        simpleTabs.init({
-            el: $('#tasks')
-        });
+        // simpleTabs.init({
+        //     el: $('#tasks')
+        // });
         simpleTabs.init({
             el: $('#infos')
         });
