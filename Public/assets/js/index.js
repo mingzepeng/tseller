@@ -19,11 +19,11 @@
     })
     $('#sliderWrap').flexslider({
         animation: "slide",
-        directionNav:false
+        directionNav: false
     });
     $('#winning-works-wrap').flexslider({
         animation: "slide",
-        directionNav:false,
+        directionNav: false,
         animationLoop: false,
 
         itemWidth: 150,
@@ -31,7 +31,9 @@
         maxItems: 4
 
     });
-
+    $("#login").click(function(){
+        alert("敬请期待");            
+    });
     // $('#sliderWrap').nivoSlider({
     //     effect:'fade'
     // });
