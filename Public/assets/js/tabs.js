@@ -47,7 +47,6 @@
 
 var g5Tabs = function(el){
 
-	console.log('G5: g5Tabs Executed');
 
 };
 (function(g5Tabs,$){
