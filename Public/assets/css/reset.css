@@ -67,12 +67,10 @@ figure { margin: 0; padding: 0; }
 figure figcaption { text-align: center; }
 
 /* Reset Links // Remove Outlines */
-a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
-a:active, a:hover, a:focus { outline: none; }
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration: none; }
+a,a:hover ,a:link , a:active, a:visited { color:#09f;outline: none;  }
+a:hover{ text-decoration: underline;}
 
-a, a:active, a:visited { color:#0066ff; }
-a:hover { color:#0048b5; }
-a:link { -webkit-tap-highlight-color: #ff9000; } 
 
 /* Improve readability of pre-formatted text in all browsers // Add Styling to older browsers */
 code, pre { font-family: "Courier New", monospace, serif; font-size: 1em; }
@@ -168,21 +166,3 @@ pre { padding: 15px; white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 
 ::-moz-selection{ background: #000; color: #fff; text-shadow: none; }
 ::selection { background: #000; color: #fff; text-shadow: none; } 
 
-/* Clearfix */
-.cf:before, .cf:after { content: ""; display: table; }
-.cf:after { clear: both; }
-.cf { zoom: 1; }
-
-/* Print Styles / inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ */
-@media print {
-    * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-    a, a:visited { text-decoration: underline; }
-    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-    thead { display: table-header-group; } /* h5bp.com/t */
-    tr, img { page-break-inside: avoid; }
-    img { max-width: 100% !important; }
-    @page { margin: 0.5cm; }
-    p, h2, h3 { orphans: 3; widows: 3; }
-    h2, h3 { page-break-after: avoid; }
-}
