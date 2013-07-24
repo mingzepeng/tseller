@@ -54,10 +54,11 @@ h6 { font-size: 0.75em; margin: 2.33em 0; }
 /* Global Classes // Children */ 
 .first { margin-left: 0; }
 .last { margin-right: 0; }
-
+.v-first { margin-top: 0; }
+.v-last { margin-bottom: 0; }
 /* Global Classes // Display */ 
-.left { float: left; }
-.right { float: right; }
+.fl { float: left; }
+.fr { float: right; }
 .clear { clear: both; }
 
 .block { display: block; }
