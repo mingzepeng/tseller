@@ -224,9 +224,11 @@ class Medoo{
 	}
 		
 	public function select($table, $columns, $where = null)	{
-		$query = $this->query('SELECT ' . (
+		$sql = 'SELECT ' . (
 			is_array($columns) ? implode(', ', $columns) : $columns
-		) . ' FROM ' . $table . $this->where_clause($where));
+		) . ' FROM ' . $table . $this->where_clause($where);
+		//echo($sql);
+		$query = $this->query($sql);
 	
 		 
 		if(defined('DEBUG') && DEBUG===true){
@@ -250,7 +252,9 @@ class Medoo{
 		{
 			$values[] = is_array($value) ? serialize($value) : $value;
 		}
-		$this->query('INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')');
+		$sql = 'INSERT INTO ' . $table . ' (' . $keys . ') VALUES (' . $this->data_implode(array_values($values), ',') . ')';
+		//echo $sql;
+		$this->query($sql);
 		
 		return $this->pdo->lastInsertId();
 	}

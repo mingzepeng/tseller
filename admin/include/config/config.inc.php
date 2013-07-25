@@ -39,9 +39,10 @@ define( 'OSA_ENCRYPT_KEY','whatafuckingday!');
 
 //prefix不要更改，除非修改osadmin.sql文件中的所有表名
 define ( 'OSA_TABLE_PREFIX' ,'osa_');
+define ( 'JH_TABLE_PREFIX' ,'jh_');
 
 //页面设置
-define ( 'DEBUG' ,false);
+define ( 'DEBUG' , false);
 define ( 'PAGE_SIZE', 25 );
 
 //数据库配置
