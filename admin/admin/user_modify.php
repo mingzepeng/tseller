@@ -41,7 +41,7 @@ if (Common::isPost ()) {
 }
 
 $group_options=UserGroup::getGroupForOptions();
-
+//var_dump($user);
 Template::assign ( 'user', $user );
 Template::assign ( 'group_options', $group_options );
 Template::display ( 'admin/user_modify.tpl' );

@@ -1,8 +1,10 @@
 <?php
-define('APP_DEBUG', true);
+include "init.php";
 
-define('PUBLIC_PATH', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Public');
+define('APP',(isset($_GET['app']) && $_GET['app'] !=='')? trim($_GET['app']) : 'index');
 
-define('DATA_PATH', PUBLIC_PATH . DIRECTORY_SEPARATOR . 'data');
+define('ACTION',(isset($_GET['action']) && $_GET['action'] !=='')? trim($_GET['action']) : 'index');
 
-require "ThinkPHP/ThinkPHP.php";
+Controller::run();
+
+//include "main.html";

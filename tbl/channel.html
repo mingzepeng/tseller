@@ -1,0 +1,34 @@
+
+ <?php
+ $cache_expire = 60*60*24*365;
+ header("Pragma: public");
+ header("Cache-Control: max-age=".$cache_expire);
+ header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$cache_expire) . ' GMT');
+ var_dump($_REQUEST);exit();
+ ?>
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Channel page</title>
+    <script src="http://a.tbcdn.cn/apps/top/x/sdk.js"></script>
+    <script>
+       // TOP.channel.transport();
+    </script>
+</head>
+<body>
+	<div id="taobao-login"></div>
+<script>
+  TOP.ui("login-btn", {
+    container: "#taobao-login"
+  , type: "1,1"
+  , callback:{
+      login: function(){}
+    , logout: function(){}
+    }
+  });
+</script>
+</body>
+</html>

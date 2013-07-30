@@ -11,7 +11,8 @@ $current_date_time =  Common::getDateTime();
 
 if (Common::isPost ()) {
 
-	$input_data = array ('title'=>$title,'type_id' => $type_id,'url'=>$url,'img_url'=>$img_url,'description'=>$description, 'content'=>$content,'tag'=>$tag,'used'=>$used,'order_no'=>$order_no,'author_id' => $current_user_id, 'add_time' =>$current_date_time, 'modify_time' => $current_date_time);
+	$input_data = array ('title'=>$title,'type_id' => $type_id,'url'=>$url,'description'=>$description, 'content'=>htmlspecialchars($content),'tag'=>$tag,'used'=>$used,'order_no'=>$order_no,'author_id' => $current_user_id, 'add_time' =>$current_date_time, 'modify_time' => $current_date_time);
+	if(is_array($img_url) && !empty($img_url)) $input_data['img_url'] = implode(',',$img_url);
 	//var_dump($input_data);exit;
 	$id = Content::add ( $input_data );
 	
@@ -22,7 +23,6 @@ if (Common::isPost ()) {
 	}else{
 		OSAdmin::alert("error");
 	}
-	
 }
 
 $content_type_options_list = array();
