@@ -25,19 +25,22 @@ class userApp extends baseApp
 			} catch (Exception $e) {
 				$msg = '登陆失败'.$e->getMessage();
 			}
+			//var_dump($this->checkBind($_SESSION['taobao_user_nick']));
 			if(!$this->checkBind($_SESSION['taobao_user_nick'])) 
 				$_SESSION['bind'] = '1';
 
 		}
 		//var_dump($_SESSION);
-		include "main.html";
+		//include "main.html";
+		header("Location:index.php");
 	}
 
 	public function logoutAction()
 	{
 		$_SESSION = array();
 		session_destroy();
-		include "main.html";
+		header("Location:index.php");
+		//include "main.html";
 	}
 
 	public function bindAction()
@@ -53,7 +56,7 @@ class userApp extends baseApp
 			Out::ajaxError('账号或者密码不能为空');
 
 		$url = USER_API_URL_."?app=member&action=login&username={$_POST['jh_username']}&password={$_POST['jh_password']}";
-		//echo $url;
+
 		$user = null;
 		try {
 			$user = json_decode(file_get_contents($url));
@@ -97,8 +100,10 @@ class userApp extends baseApp
 		$result = false;
 		$db = $this->getInstanceDb();
 		$data = $db->select("jh_user",'*',array('taobao_id'=>$taoba_id));
-		if($data !== false && isset($data['user_name']) && !empty($data['user_name']))
+
+		if($data[0] !== false && isset($data[0]['user_name']) && !empty($data[0]['user_name']))
 			$result = true;
+
 		return $result;
 	}
 }

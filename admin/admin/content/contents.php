@@ -27,10 +27,10 @@ $total_page=$total_page<1?1:$total_page;
 $page_no=$page_no>($total_page)?($total_page):$page_no;
 $start = ($page_no - 1) * $page_size;
 
-$sql = "SELECT jh_content.id, jh_content.type_id, jh_content_type.type, jh_content.tag, jh_content.used, jh_content.order_no, osa_user.user_name as author, jh_content.title, jh_content.url, jh_content.author_id, jh_content.add_time, jh_content.modify_time FROM jh_content LEFT JOIN osa_user ON jh_content.author_id = osa_user.user_id LEFT JOIN jh_content_type ON jh_content.type_id = jh_content_type.id limit {$start},{$page_size}";
+$sql = "SELECT jh_content.id, jh_content.type_id, jh_content_type.type, jh_content.tag, jh_content.used, jh_content.order_no, jh_user.user_name as author, jh_content.title, jh_content.url, jh_content.author_id, jh_content.add_time, jh_content.modify_time FROM jh_content LEFT JOIN jh_user ON jh_content.author_id = jh_user.user_id LEFT JOIN jh_content_type ON jh_content.type_id = jh_content_type.id limit {$start},{$page_size}";
 //echo $sql;
 $contents = Content::findBySql($sql);
-
+//var_dump($contents);
 
 //var_dump($contents);
 $page_html=Pagination::showPager("",$page_no,PAGE_SIZE,$row_count);

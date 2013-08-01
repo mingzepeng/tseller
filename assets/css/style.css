@@ -127,7 +127,7 @@ body { font: 500 14px/1.8 Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei
 
 .infos .account a.login { margin-right: 25px; }
 
-.infos .tabs-headlinks { display: block; margin: 0px auto; width: 270px; }
+.infos .tabs-headlinks { display: block; margin: 35px  auto 0 auto; width: 270px; }
 
 .infos .tabs-headlinks li {
 	background: #58acf4;
@@ -145,7 +145,7 @@ body { font: 500 14px/1.8 Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei
 
 .infos .tabs-content {
 	background: white;
-	height: 175px;
+	height: 200px;
 	margin: 0 auto;
 	width: 270px;
 }
