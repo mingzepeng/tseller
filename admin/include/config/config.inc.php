@@ -33,7 +33,7 @@ define ( 'OSA_DB_URL','127.0.0.1');
 define ( 'OSA_DB_PORT','3306');
 define ( 'OSA_DB_NAME' ,'jhseller');
 define ( 'OSA_USER_NAME','root');
-define ( 'OSA_PASSWORD','');
+define ( 'OSA_PASSWORD','root');
 
 
 //COOKIE加密密钥，建议修改

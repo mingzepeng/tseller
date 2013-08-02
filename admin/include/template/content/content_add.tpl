@@ -6,7 +6,9 @@
 <{$osadmin_action_alert}>
 <{$osadmin_quick_note}>
 <link rel="stylesheet" type="text/css" href="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/css/jquery.fileupload-ui.css">
+
 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/uploadify.css">
 <style type="text/css">
  #editor {  max-height: 250px;
     height: 250px;
@@ -116,6 +118,9 @@
 				<label>链接地址 <span class="label label-important">如果不是外部内容链接，此处为空</span></label>
 				<input type="text" name="url" value="<{$_POST.url}>" class="input-xlarge">
 
+        <label>图片上传 </label>
+        <input id="Filedata" name="Filedata" type="file" multiple="true" />
+
 
 
 				<label>TAG<span class="label label-important">多个tag用空格隔开</span></label>
@@ -159,6 +164,7 @@
 
 <script src="<{$smarty.const.ADMIN_URL}>/assets/js/jquery.hotkeys.js"></script>
 <script type="text/javascript" src="<{$smarty.const.ADMIN_URL}>/assets/lib/bootstrap/js/bootstrap-wysiwyg.js"></script>
+<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 
 <script>
     function initToolbarBootstrapBindings() {
@@ -197,6 +203,13 @@
     })
 
     window.prettyPrint && prettyPrint();
-
+      $('#Filedata').uploadify({
+        'swf'      : '<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/uploadify.swf',
+        'uploader' : '<{$smarty.const.ADMIN_URL}>/admin/upload.php',
+        'onUploadSuccess' : function(file, data, response) {
+            //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);
+            $("form").append('<input type="hidden" name="img_url[]" value="'+data+'" />')
+        }
+      });
 </script>
 <{ include file="footer.tpl" }>
