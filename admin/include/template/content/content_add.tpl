@@ -155,26 +155,7 @@
     </div>
 </div>
 <!-- END 以下内容不需更改，请保证该TPL页内的标签匹配即可 -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/vendor/jquery.ui.widget.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/load-image.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/canvas-to-blob.min.js"></script>
-<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/jquery.iframe-transport.js"></script>
-<!-- The basic File Upload plugin -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/jquery.fileupload.js"></script>
-<!-- The File Upload processing plugin -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/jquery.fileupload-process.js"></script>
-<!-- The File Upload image preview & resize plugin -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/jquery.fileupload-image.js"></script>
-<!-- The File Upload audio preview plugin -->
-<!-- <script src="js/jquery.fileupload-audio.js"></script> -->
-<!-- The File Upload video preview plugin -->
-<!-- <script src="js/jquery.fileupload-video.js"></script> -->
 
-<!-- The File Upload validation plugin -->
-<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/js/jquery.fileupload-validate.js"></script>
 
 <script src="<{$smarty.const.ADMIN_URL}>/assets/js/jquery.hotkeys.js"></script>
 <script type="text/javascript" src="<{$smarty.const.ADMIN_URL}>/assets/lib/bootstrap/js/bootstrap-wysiwyg.js"></script>
