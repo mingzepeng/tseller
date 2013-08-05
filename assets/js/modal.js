@@ -42,7 +42,7 @@
 				modalMarkUp = el.html(),
 				overlayContent = g5Modal.elements.container.find('.overlay-content'),
 				externalLink = exitLink || null;
-				console.log(overlayContent)
+				//console.log(overlayContent)
 			overlayContent.html(modalMarkUp);
 
 			(function(){
@@ -84,7 +84,7 @@
 			g5Modal.elements.container.find('.overlay').removeClass('active').fadeOut(250);
 		},
 		events: function(){
-			console.log(g5Modal.elements.openAnchor.length);
+			//console.log(g5Modal.elements.openAnchor.length);
 			g5Modal.elements.openAnchor.on('click', function(event){
 				//alert(1)
 				var $this = $(this),

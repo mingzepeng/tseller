@@ -5,8 +5,9 @@ include "admin/include/lib/Common.class.php";
 include "app/baseApp.php";
 //设置根目录
 define('ROOT',dirname(__FILE__));
-include ROOT."/lib/Out.class.php";
 include ROOT."/lib/common.func.php";
+
+import('Out');
 
 class Controller
 {

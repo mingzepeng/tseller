@@ -77,7 +77,7 @@
     //     }
     //     $("#top-services").find('table').html(html);
     // })
-    if(bind)
+    if(window.bind)
     {
         g5Modal.openModal("bindjh-box");
         $(".overlay-content form").submit(function(){

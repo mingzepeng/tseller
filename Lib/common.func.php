@@ -32,3 +32,27 @@ function curl($url, $postFields = null)
 	curl_close($ch);
 	return $reponse;
 }
+
+function import($class,$type='class')
+{
+	static $classes = array();
+	$class = $class.'.'.$type.'.php';
+	if (in_array($class,$classes)) return true;
+
+    $class_path = ROOT.'/Lib/'.$class;
+    if (!is_file($class_path)) return false;
+
+    include_once($class_path);
+    $classes[] = $class;
+	return true;
+}
+
+function cutStr($str,$length=15, $add_dot = true,$encoding = 'utf-8')
+{
+	if(mb_strlen($str,$encoding) > $length)
+	{
+		$str = mb_substr($str, 0, $length,$encoding);
+		if($add_dot) $str .= '...';
+	}
+	return $str;
+}
