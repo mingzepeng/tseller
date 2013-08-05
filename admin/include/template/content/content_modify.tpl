@@ -5,6 +5,8 @@
 
 <{$osadmin_action_alert}>
 <{$osadmin_quick_note}>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/uploadify.css">
    <style type="text/css">
  #editor {  max-height: 250px;
     height: 250px;
@@ -42,10 +44,7 @@
 
            <form id="tab" method="post" action="" autocomplete="off">
 				<label>标题</label>
-				<input type="text" name="type" value="<{$data.title}>" class="input-xlarge" autofocus="true" required="true" >
-
-				<label>封面图片</label>
-				<input type="text" name="img_url" value="<{$data.img_url}>" class="input-xlarge"  required="true">
+				<input type="text" name="title" value="<{$data.title}>" class="input-xlarge" autofocus="true" required="true" >
 
 				<label>内容类型</label>
 				 <{html_options name="type_id" id="DropDownTimezone" class="input-xlarge" options=$content_type_options_list selected=$data.type_id}>
@@ -114,6 +113,15 @@
 				<label>链接地址<span class="label label-important">如果不是外部内容链接，此处为空</span></label>
 				<input type="text" name="url" value="<{$data.url}>" class="input-xlarge"  required="true">
 
+        <label>图片上传 </label>
+        <input id="Filedata" name="Filedata" type="file" multiple="true" />
+
+        <div id="FiledataDisplay" class="clearfix">
+        <{foreach name=img_url from=$data.img_url item=img_url}>
+          <div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="<{$img_url}>" /><a target="_blank" href="<{$smarty.const.ADMIN_URL}>../data/uploads/<{$img_url}>"><img width="100" height="100" src="<{$smarty.const.ADMIN_URL}>../data/uploads/<{$img_url}>" /></a><br /><a class="delete_img" href="#">X</a></div>
+        <{/foreach}>
+        </div>
+
 				<label>TAG<span class="label label-important">多个tag用空格隔开</span></label>
 				<input type="text" name="tag" value="<{$data.tag}>" class="input-xlarge" />
 				
@@ -135,6 +143,7 @@
 
 <script src="<{$smarty.const.ADMIN_URL}>/assets/js/jquery.hotkeys.js"></script>
 <script type="text/javascript" src="<{$smarty.const.ADMIN_URL}>/assets/lib/bootstrap/js/bootstrap-wysiwyg.js"></script>
+<script src="<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     function initToolbarBootstrapBindings() {
@@ -171,6 +180,25 @@
         	$('#content').val($('#editor').html());
         	return true;
     })
+      $("#FiledataDisplay .delete_img").click(function(){
+        $(this).closest("div").remove();
+        return false;
+      })
+      $('#Filedata').uploadify({
+        'swf'      : '<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/uploadify.swf',
+        'uploader' : '<{$smarty.const.ADMIN_URL}>/admin/upload.php',
+        'onUploadSuccess' : function(file, data, response) {
+            //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);
+            //$("form").append('')
+            $("#FiledataDisplay").append('<div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="'+data+'" /><a target="_blank" href="<{$smarty.const.ADMIN_URL}>../data/uploads/'+ data +'"><img width="100" height="100" src="<{$smarty.const.ADMIN_URL}>../data/uploads/'+ data +'" /></a><br /><a class="delete_img" href="#">X</a></div>')
+
+            $("#FiledataDisplay .delete_img").click(function(){
+              $(this).closest("div").remove();
+              return false;
+            })
+        }
+      });
+
 </script>
 
 <!-- END 以下内容不需更改，请保证该TPL页内的标签匹配即可 -->

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-08-02 21:48:18
+<?php /* Smarty version 2.6.26, created on 2013-08-03 11:03:57
          compiled from content/content_add.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'content/content_add.tpl', 54, false),)), $this); ?>
@@ -145,7 +145,7 @@ unset($_smarty_tpl_vars);
         <label>图片上传 </label>
         <input id="Filedata" name="Filedata" type="file" multiple="true" />
 
-
+        <div id="FiledataDisplay" class="clearfix"></div>
 
 				<label>TAG<span class="label label-important">多个tag用空格隔开</span></label>
 				<input type="text" name="tag" value="<?php echo $this->_tpl_vars['_POST']['tag']; ?>
@@ -239,7 +239,15 @@ unset($_smarty_tpl_vars);
 /admin/upload.php',
         'onUploadSuccess' : function(file, data, response) {
             //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);
-            $("form").append('<input type="hidden" name="img_url[]" value="'+data+'" />')
+            //$("form").append('')
+            $("#FiledataDisplay").append('<div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="'+data+'" /><a target="_blank" href="<?php echo @ADMIN_URL; ?>
+../data/uploads/'+ data +'"><img width="100" height="100" src="<?php echo @ADMIN_URL; ?>
+../data/uploads/'+ data +'" /></a><br /><a class="delete_img" href="#">X</a></div>')
+
+            $("#FiledataDisplay .delete_img").click(function(){
+              $(this).closest("div").remove();
+              return false;
+            })
         }
       });
 </script>

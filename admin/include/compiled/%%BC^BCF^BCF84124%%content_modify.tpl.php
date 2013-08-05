@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-29 15:47:50
+<?php /* Smarty version 2.6.26, created on 2013-08-03 11:35:50
          compiled from content/content_modify.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'content/content_modify.tpl', 51, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'content/content_modify.tpl', 50, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -23,6 +23,9 @@ unset($_smarty_tpl_vars);
 
 <?php echo $this->_tpl_vars['osadmin_quick_note']; ?>
 
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="<?php echo @ADMIN_URL; ?>
+/assets/lib/uploadify/uploadify.css">
    <style type="text/css">
  #editor {  max-height: 250px;
     height: 250px;
@@ -60,12 +63,8 @@ unset($_smarty_tpl_vars);
 
            <form id="tab" method="post" action="" autocomplete="off">
 				<label>标题</label>
-				<input type="text" name="type" value="<?php echo $this->_tpl_vars['data']['title']; ?>
+				<input type="text" name="title" value="<?php echo $this->_tpl_vars['data']['title']; ?>
 " class="input-xlarge" autofocus="true" required="true" >
-
-				<label>封面图片</label>
-				<input type="text" name="img_url" value="<?php echo $this->_tpl_vars['data']['img_url']; ?>
-" class="input-xlarge"  required="true">
 
 				<label>内容类型</label>
 				 <?php echo smarty_function_html_options(array('name' => 'type_id','id' => 'DropDownTimezone','class' => "input-xlarge",'options' => $this->_tpl_vars['content_type_options_list'],'selected' => $this->_tpl_vars['data']['type_id']), $this);?>
@@ -138,6 +137,24 @@ unset($_smarty_tpl_vars);
 				<input type="text" name="url" value="<?php echo $this->_tpl_vars['data']['url']; ?>
 " class="input-xlarge"  required="true">
 
+        <label>图片上传 </label>
+        <input id="Filedata" name="Filedata" type="file" multiple="true" />
+
+        <div id="FiledataDisplay" class="clearfix">
+        <?php $_from = $this->_tpl_vars['data']['img_url']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['img_url'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['img_url']['total'] > 0):
+    foreach ($_from as $this->_tpl_vars['img_url']):
+        $this->_foreach['img_url']['iteration']++;
+?>
+          <div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="<?php echo $this->_tpl_vars['img_url']; ?>
+" /><a target="_blank" href="<?php echo @ADMIN_URL; ?>
+../data/uploads/<?php echo $this->_tpl_vars['img_url']; ?>
+"><img width="100" height="100" src="<?php echo @ADMIN_URL; ?>
+../data/uploads/<?php echo $this->_tpl_vars['img_url']; ?>
+" /></a><br /><a class="delete_img" href="#">X</a></div>
+        <?php endforeach; endif; unset($_from); ?>
+        </div>
+
 				<label>TAG<span class="label label-important">多个tag用空格隔开</span></label>
 				<input type="text" name="tag" value="<?php echo $this->_tpl_vars['data']['tag']; ?>
 " class="input-xlarge" />
@@ -164,6 +181,8 @@ unset($_smarty_tpl_vars);
 /assets/js/jquery.hotkeys.js"></script>
 <script type="text/javascript" src="<?php echo @ADMIN_URL; ?>
 /assets/lib/bootstrap/js/bootstrap-wysiwyg.js"></script>
+<script src="<?php echo @ADMIN_URL; ?>
+/assets/lib/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     function initToolbarBootstrapBindings() {
@@ -200,6 +219,29 @@ unset($_smarty_tpl_vars);
         	$('#content').val($('#editor').html());
         	return true;
     })
+      $("#FiledataDisplay .delete_img").click(function(){
+        $(this).closest("div").remove();
+        return false;
+      })
+      $('#Filedata').uploadify({
+        'swf'      : '<?php echo @ADMIN_URL; ?>
+/assets/lib/uploadify/uploadify.swf',
+        'uploader' : '<?php echo @ADMIN_URL; ?>
+/admin/upload.php',
+        'onUploadSuccess' : function(file, data, response) {
+            //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);
+            //$("form").append('')
+            $("#FiledataDisplay").append('<div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="'+data+'" /><a target="_blank" href="<?php echo @ADMIN_URL; ?>
+../data/uploads/'+ data +'"><img width="100" height="100" src="<?php echo @ADMIN_URL; ?>
+../data/uploads/'+ data +'" /></a><br /><a class="delete_img" href="#">X</a></div>')
+
+            $("#FiledataDisplay .delete_img").click(function(){
+              $(this).closest("div").remove();
+              return false;
+            })
+        }
+      });
+
 </script>
 
 <!-- END 以下内容不需更改，请保证该TPL页内的标签匹配即可 -->

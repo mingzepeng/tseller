@@ -5,7 +5,7 @@
 
 <{$osadmin_action_alert}>
 <{$osadmin_quick_note}>
-<link rel="stylesheet" type="text/css" href="<{$smarty.const.ADMIN_URL}>/assets/lib/file-upload/css/jquery.fileupload-ui.css">
+
 
 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<{$smarty.const.ADMIN_URL}>/assets/lib/uploadify/uploadify.css">
@@ -121,7 +121,7 @@
         <label>图片上传 </label>
         <input id="Filedata" name="Filedata" type="file" multiple="true" />
 
-
+        <div id="FiledataDisplay" class="clearfix"></div>
 
 				<label>TAG<span class="label label-important">多个tag用空格隔开</span></label>
 				<input type="text" name="tag" value="<{$_POST.tag}>" class="input-xlarge" />
@@ -208,7 +208,13 @@
         'uploader' : '<{$smarty.const.ADMIN_URL}>/admin/upload.php',
         'onUploadSuccess' : function(file, data, response) {
             //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);
-            $("form").append('<input type="hidden" name="img_url[]" value="'+data+'" />')
+            //$("form").append('')
+            $("#FiledataDisplay").append('<div class="thumb pull-left" style="margin-right:10px;"><input type="hidden" name="img_url[]" value="'+data+'" /><a target="_blank" href="<{$smarty.const.ADMIN_URL}>../data/uploads/'+ data +'"><img width="100" height="100" src="<{$smarty.const.ADMIN_URL}>../data/uploads/'+ data +'" /></a><br /><a class="delete_img" href="#">X</a></div>')
+
+            $("#FiledataDisplay .delete_img").click(function(){
+              $(this).closest("div").remove();
+              return false;
+            })
         }
       });
 </script>
