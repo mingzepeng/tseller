@@ -59,22 +59,26 @@ var g5Tabs = function(el){
 			//console.log($tabLink)
 			//console.log($tabContent)
 		if ( $tabLink.length === 0 || $tabContent.length === 0 ) {
-			throw 'Missing required elements.';
+			//throw 'Missing required elements.';
+		}
+		else
+		{
+			$tabLink.on('click', function(event) {
+
+				var $this = $(this),
+					$li = $this.parent();
+
+		        if ( !$li.is('.active') ) {
+		            $li.addClass('active').siblings('li').removeClass('active');
+		            $tabContent.hide().removeClass('active').eq($li.index()).show().addClass('active');
+		        }
+
+			    event.preventDefault();
+
+			});			
 		}
 
-		$tabLink.on('click', function(event) {
 
-			var $this = $(this),
-				$li = $this.parent();
-
-	        if ( !$li.is('.active') ) {
-	            $li.addClass('active').siblings('li').removeClass('active');
-	            $tabContent.hide().removeClass('active').eq($li.index()).show().addClass('active');
-	        }
-
-		    event.preventDefault();
-
-		});
 	};
 })(g5Tabs,jQuery);
 

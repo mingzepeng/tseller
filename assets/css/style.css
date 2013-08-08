@@ -97,10 +97,9 @@ body { font: 500 14px/1.8 Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei
 
 .content { border-top: #3987cc solid 3px; padding: 17px 0; width: 100%;  }
 
+.main{width: 635px;}
+.slider{ width: 310px;}
 
-.line1 { height: 310px; }
-
-.line2 { }
 
 .slider { height: 310px; width: 635px; }
 
@@ -201,7 +200,7 @@ text-align: center;}
 	width: 25px;
 }
 
-.mod-rank-list li { padding-left: 30px; }
+.mod-rank-list li { padding-left: 20px; }
 
 .mod-rank-list li p { margin-bottom: 4px; padding-left: 5px; }
 
@@ -220,6 +219,7 @@ text-align: center;}
 .mod-rank-fwslist li { height: 65px; }
 
 .mod-rank-fwslist li a { display: inline-block; float: left; margin-right: 20px; }
+.mod-rank-fwslist li p a{ float: none}
 
 .category { width: 635px; }
 

@@ -31,7 +31,7 @@ if(empty($data)){
 }
 $data['content'] = htmlspecialchars_decode($data['content']);
 $data['url'] = urldecode($data['url']);
-$data['img_url'] = array_map('urldecode', explode('|', $data['img_url']));
+$data['img_url'] = !empty($data['img_url']) ? array_map('urldecode', explode('|', $data['img_url'])) : array();
 $content_type_options_list = array();
 $content_types = ContentType::find();
 foreach ($content_types as $value) {

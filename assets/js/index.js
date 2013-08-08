@@ -120,12 +120,14 @@
             return false;
         });
     }
-    $("#tasks_recent,#tasks_hot,#tasks_price")
-    $("#login").click(function(){
-        alert("敬请期待");            
-    });
-    // $('#sliderWrap').nivoSlider({
-    //     effect:'fade'
-    // });
-   // $('#slider').orbit();
+
+
+    if(login === '0')
+    {
+         $(".wrap a").click(function(){
+            alert('用淘宝账号登陆后，才能查看任务噢！');
+            return false;
+        })       
+    }
+
 });

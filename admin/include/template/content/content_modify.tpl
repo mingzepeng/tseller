@@ -111,7 +111,7 @@
  <textarea name="content" id="content" style="display:none"></textarea>
 <br />
 				<label>链接地址<span class="label label-important">如果不是外部内容链接，此处为空</span></label>
-				<input type="text" name="url" value="<{$data.url}>" class="input-xlarge"  required="true">
+				<input type="text" name="url" value="<{$data.url}>" class="input-xlarge">
 
         <label>图片上传 </label>
         <input id="Filedata" name="Filedata" type="file" multiple="true" />

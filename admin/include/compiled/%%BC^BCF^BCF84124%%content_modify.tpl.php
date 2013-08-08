@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-08-03 11:35:50
+<?php /* Smarty version 2.6.26, created on 2013-08-08 21:54:44
          compiled from content/content_modify.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'html_options', 'content/content_modify.tpl', 50, false),)), $this); ?>
@@ -135,7 +135,7 @@ unset($_smarty_tpl_vars);
 <br />
 				<label>链接地址<span class="label label-important">如果不是外部内容链接，此处为空</span></label>
 				<input type="text" name="url" value="<?php echo $this->_tpl_vars['data']['url']; ?>
-" class="input-xlarge"  required="true">
+" class="input-xlarge">
 
         <label>图片上传 </label>
         <input id="Filedata" name="Filedata" type="file" multiple="true" />
