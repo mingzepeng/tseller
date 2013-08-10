@@ -1,7 +1,6 @@
 <?php
 class indexApp extends baseApp
 {
-	public $_name = 'index';
 
 	public function indexAction()
 	{
@@ -12,6 +11,9 @@ class indexApp extends baseApp
 		$spread_list = array_slice($this->getListData($spread_url),0,5);
 		$top_rewards_list = array_slice($this->getListData($top_rewards_url),0,5);
 		$top_s_list = $this->getTopSList();
+		//import('content/Content');
+		$slider_data = Content::getContentsByTypeName('图片轮播');
+		//var_dump($slider_data);
 		include "assets/index.html";
 	}
 

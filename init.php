@@ -9,6 +9,38 @@ include ROOT."/lib/common.func.php";
 
 import('Out');
 
+function OSAdminAutoLoad($classname){
+    $filename = str_replace('_', '/', $classname) . '.class.php';
+    // class类
+    $filepath = ADMIN_BASE_CLASS . $filename;
+    if (file_exists($filepath)) {
+        return include $filepath;
+    }else{
+		//仅对Class仅支持一级子目录
+		//如果子目录中class文件与CLASS根下文件同名，则子目录里的class文件将被忽略
+
+		$handle=opendir(ADMIN_BASE_CLASS);
+		
+		while (false !== ($file = readdir($handle))) {
+			if (is_dir(ADMIN_BASE_CLASS. "/" . $file)) {
+				$filepath=ADMIN_BASE_CLASS."/".$file."/".$filename;
+				if (file_exists($filepath)) {
+					return include $filepath;
+				}
+			}
+		}
+	}
+    //lib库文件
+    $filepath = ADMIN_BASE_LIB . $filename;
+    if (file_exists($filepath)) {
+        return include $filepath;
+    }
+
+    throw new Exception( $filepath . ' NOT FOUND!');
+}
+spl_autoload_register('OSAdminAutoLoad');
+
+
 class Controller
 {
 	

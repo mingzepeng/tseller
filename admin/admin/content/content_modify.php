@@ -12,7 +12,7 @@ if (Common::isPost ()) {
 	$update_data = array ('title'=>$title,'type_id' => $type_id,'url'=>urlencode($url),'description'=>$description, 'content'=>htmlspecialchars($content),'tag'=>$tag,'used'=>$used,'order_no'=>$order_no, 'modify_time' => $current_date_time);
 	if(is_array($img_url) && !empty($img_url))
 	{
-		$input_data['img_url'] = implode('|',array_map('urlencode', $img_url));
+		$update_data['img_url'] = implode('|',array_map('urlencode', $img_url));
 	}
 	$id = Content::update ( $id,$update_data );
 	if ($id) {

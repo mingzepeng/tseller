@@ -92,16 +92,14 @@ var bind = '<?php echo $_SESSION['bind'] ?>';
        <div class="slider btmspc">
             <div id="sliderWrap" class="flexslider">
                 <ul class="slides">
-                    <li>
-                        <a target="_blank" href="http://www.taobao.com/go/act/weike/designer.php?spm=a1z13.1113645.257082.1.KupAHy&tracelog=sj">
-                            <img src="assets/images/index/slide/slide1.jpg" width="635" height="310">
+                     <?php foreach ($slider_data as $value) { ?>
+                     <li>
+                        <a target="_blank" href="<?php echo $value['url']; ?>">
+                            <img src="data/uploads/<?php echo $value['img_url'][0]; ?>" width="635" height="310">
                         </a>
-                    </li>
-                                    <li>
-                        <a target="_blank" href="http://www.taobao.com/go/act/weike/designer.php?spm=a1z13.1113645.257082.1.KupAHy&tracelog=sj">
-                            <img src="assets/images/index/slide/slide1.jpg" width="635" height="310">
-                        </a>
-                    </li>
+                    </li>                       
+                     <?php } ?>
+           
                 </ul>
             </div>
         </div>
