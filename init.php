@@ -9,6 +9,7 @@ include ROOT."/lib/common.func.php";
 
 import('Out');
 
+//调用后台类
 function OSAdminAutoLoad($classname){
     $filename = str_replace('_', '/', $classname) . '.class.php';
     // class类

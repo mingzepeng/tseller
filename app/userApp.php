@@ -19,7 +19,7 @@ class userApp extends baseApp
 				if($token !== null)
 				{
 					$_SESSION['access_token'] = $token->access_token;
-					$_SESSION['taobao_user_nick'] = $token->taobao_user_nick;		
+					$_SESSION['taobao_user_nick'] = urldecode($token->taobao_user_nick);		
 				}
 
 			} catch (Exception $e) {
